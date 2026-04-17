@@ -1,0 +1,103 @@
+{
+  "Metadata": {
+    "title": "Frontend Developer Portfolio",
+    "description": "Modern portfolio landing page with a reusable dark background system."
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "localeLabel": {
+      "ru": "Russian",
+      "en": "English"
+    }
+  },
+  "HomePage": {
+    "firstScreen": {
+      "navigationLabel": "Primary navigation",
+      "navigation": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+      },
+      "role": "Frontend developer with full-stack skills",
+      "name": "Alexey Belov",
+      "stackLabel": "Core stack",
+      "stack": "React, Next.js, TypeScript, Tailwind CSS, Node.js",
+      "actions": {
+        "downloadCv": "Download CV",
+        "projects": "Projects"
+      }
+    },
+    "projects": {
+      "eyebrow": "Selected mock blocks",
+      "title": "Content sits above the same canvas without section-colored slabs.",
+      "items": {
+        "dashboard": {
+          "title": "Realtime Dashboard",
+          "caption": "Data-heavy UI with fast interactions and quiet motion.",
+          "stack": "Next.js, TypeScript, WebSocket, Tailwind"
+        },
+        "designSystem": {
+          "title": "Design System Core",
+          "caption": "Reusable primitives focused on rhythm, contrast, and scale.",
+          "stack": "React 19, Storybook, Tokens, CSS Variables"
+        },
+        "commerce": {
+          "title": "Commerce Frontend",
+          "caption": "Clean browsing flows with careful performance budgeting.",
+          "stack": "App Router, Edge rendering, Stripe, Analytics"
+        }
+      }
+    },
+    "readability": {
+      "eyebrow": "Readability check",
+      "title": "The background stays textured, but the text field remains clean.",
+      "description": "Most of the visual depth lives near the edges and corners, while the central reading area remains quiet. This keeps large headings clear and body copy stable even when the page grows with real content.",
+      "principles": {
+        "calm": "Interfaces should feel calm, fast, and intentional.",
+        "structure": "Visual systems need enough structure to scale without looking rigid.",
+        "accent": "Accent color should guide attention, not replace hierarchy."
+      }
+    },
+    "toolkit": {
+      "eyebrow": "Toolkit preview",
+      "title": "The next step can consume this data inside one global renderer.",
+      "description": "Marker components do not draw anything themselves. They only expose coordinates, so the future background system can stay global and use these anchors as input.",
+      "items": {
+        "next": "Next.js 16",
+        "react": "React 19",
+        "typescript": "TypeScript",
+        "tailwind": "Tailwind CSS v4",
+        "motion": "Framer Motion",
+        "storybook": "Storybook",
+        "query": "TanStack Query",
+        "figma": "Figma to code"
+      }
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Open to product teams, design-driven interfaces, and focused frontend work.",
+      "description": "If you want to discuss a project, product direction, or collaboration format, we can start with a short intro and move from there.",
+      "actions": {
+        "email": "Contact",
+        "projects": "Projects"
+      }
+    }
+  },
+  "DebugPanel": {
+    "eyebrow": "Anchor registry preview",
+    "title": "Collected document-level coordinates for the global background system.",
+    "summary": "{singleCount} single / {rangeCount} range zones",
+    "singleSectionTitle": "Single anchors",
+    "rangeSectionTitle": "Range anchors",
+    "single": {
+      "x": "x: {value}",
+      "y": "y: {value}"
+    },
+    "range": {
+      "startY": "startY: {value}",
+      "endY": "endY: {value}",
+      "height": "height: {value}",
+      "centerY": "centerY: {value}"
+    }
+  }
+}

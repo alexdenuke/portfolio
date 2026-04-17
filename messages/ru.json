@@ -1,0 +1,103 @@
+{
+  "Metadata": {
+    "title": "Портфолио frontend-разработчика",
+    "description": "Современный landing page с переиспользуемой глобальной системой фона."
+  },
+  "LocaleSwitcher": {
+    "label": "Язык",
+    "localeLabel": {
+      "ru": "Русский",
+      "en": "Английский"
+    }
+  },
+  "HomePage": {
+    "firstScreen": {
+      "navigationLabel": "Основная навигация",
+      "navigation": {
+        "about": "Обо мне",
+        "projects": "Проекты",
+        "contact": "Контакты"
+      },
+      "role": "Frontend-разработчик с fullstack-навыками",
+      "name": "Алексей Белов",
+      "stackLabel": "Основной стек",
+      "stack": "React, Next.js, TypeScript, Tailwind CSS, Node.js",
+      "actions": {
+        "downloadCv": "Скачать CV",
+        "projects": "Проекты"
+      }
+    },
+    "projects": {
+      "eyebrow": "Тестовые блоки",
+      "title": "Контент лежит поверх общего полотна без отдельных цветных секционных подложек.",
+      "items": {
+        "dashboard": {
+          "title": "Realtime Dashboard",
+          "caption": "Интерфейс с большим количеством данных, быстрыми взаимодействиями и спокойной анимацией.",
+          "stack": "Next.js, TypeScript, WebSocket, Tailwind"
+        },
+        "designSystem": {
+          "title": "Design System Core",
+          "caption": "Переиспользуемые примитивы с фокусом на ритм, контраст и масштабирование.",
+          "stack": "React 19, Storybook, Tokens, CSS Variables"
+        },
+        "commerce": {
+          "title": "Commerce Frontend",
+          "caption": "Чистые пользовательские сценарии с аккуратным подходом к производительности.",
+          "stack": "App Router, Edge rendering, Stripe, Analytics"
+        }
+      }
+    },
+    "readability": {
+      "eyebrow": "Проверка читаемости",
+      "title": "Фон остается фактурным, но текстовое поле остается чистым.",
+      "description": "Основная визуальная глубина находится ближе к краям и углам, а центральная зона чтения остается спокойной. Благодаря этому крупные заголовки и основной текст остаются стабильными даже при росте страницы.",
+      "principles": {
+        "calm": "Интерфейсы должны ощущаться спокойными, быстрыми и намеренными.",
+        "structure": "Визуальной системе нужно достаточно структуры, чтобы масштабироваться без ощущения жесткости.",
+        "accent": "Акцентный цвет должен направлять внимание, а не заменять иерархию."
+      }
+    },
+    "toolkit": {
+      "eyebrow": "Стек и инструменты",
+      "title": "Следующий шаг уже может использовать эти данные внутри одного глобального renderer.",
+      "description": "Marker components сами ничего не рисуют. Они только отдают координаты, поэтому будущая background system сможет оставаться глобальной и использовать эти anchors как входные данные.",
+      "items": {
+        "next": "Next.js 16",
+        "react": "React 19",
+        "typescript": "TypeScript",
+        "tailwind": "Tailwind CSS v4",
+        "motion": "Framer Motion",
+        "storybook": "Storybook",
+        "query": "TanStack Query",
+        "figma": "Figma to code"
+      }
+    },
+    "contact": {
+      "eyebrow": "Контакт",
+      "title": "Открыт к продуктовым командам, интерфейсам с сильной визуальной культурой и сфокусированной frontend-разработке.",
+      "description": "Если хотите обсудить проект, продуктовую задачу или формат сотрудничества, можно начать с короткого знакомства и двигаться дальше оттуда.",
+      "actions": {
+        "email": "Связаться",
+        "projects": "Проекты"
+      }
+    }
+  },
+  "DebugPanel": {
+    "eyebrow": "Предпросмотр реестра меток",
+    "title": "Собранные координаты уровня документа для глобальной background system.",
+    "summary": "{singleCount} одиночных / {rangeCount} диапазонов",
+    "singleSectionTitle": "Single anchors",
+    "rangeSectionTitle": "Range anchors",
+    "single": {
+      "x": "x: {value}",
+      "y": "y: {value}"
+    },
+    "range": {
+      "startY": "startY: {value}",
+      "endY": "endY: {value}",
+      "height": "height: {value}",
+      "centerY": "centerY: {value}"
+    }
+  }
+}
