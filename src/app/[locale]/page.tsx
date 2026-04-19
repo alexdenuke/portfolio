@@ -131,14 +131,15 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
           ]}
         />
 
-        <BackgroundRangeAnchorMarker
-          edge="start"
-          id="projects-contact-flow"
-          className={centeredAnchorMarkerClassName}
-        />
         <ProjectsSection
           title={t("projects.title")}
           subtitle={t("projects.subtitle")}
+          headingMarker={
+            <BackgroundSingleAnchorMarker
+              id="projects-heading-glow"
+              className={centeredAnchorMarkerClassName}
+            />
+          }
           labels={{
             viewProject: t("projects.actions.viewProject"),
             openLive: t("projects.actions.openLive"),
@@ -190,6 +191,12 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
           title={t("contact.title")}
           description={t("contact.description")}
           primaryCta={t("contact.primaryCta")}
+          headingMarker={
+            <BackgroundSingleAnchorMarker
+              id="contact-heading-glow"
+              className={centeredAnchorMarkerClassName}
+            />
+          }
           items={[
             {
               kind: "email",
@@ -214,11 +221,6 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
               value: t("contact.items.resume.value"),
             },
           ]}
-        />
-        <BackgroundRangeAnchorMarker
-          edge="end"
-          id="projects-contact-flow"
-          className={centeredAnchorMarkerClassName}
         />
       </main>
 

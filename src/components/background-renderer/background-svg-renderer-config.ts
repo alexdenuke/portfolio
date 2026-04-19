@@ -51,6 +51,18 @@ const SINGLE_VISUALS: Record<string, Partial<SingleAnchorVisual>> = {
     radiusY: 220,
     opacity: 0.1,
   },
+  "projects-heading-glow": {
+    color: "#6ee7a2",
+    radiusX: 920,
+    radiusY: 220,
+    opacity: 0.12,
+  },
+  "contact-heading-glow": {
+    color: "#6ee7a2",
+    radiusX: 920,
+    radiusY: 220,
+    opacity: 0.12,
+  },
 };
 
 const DEFAULT_RANGE_VISUAL: RangeAnchorVisual = {
@@ -79,14 +91,6 @@ const RANGE_VISUALS: Record<string, Partial<RangeAnchorVisual>> = {
     opacity: 0.13,
     bleed: 130,
     blur: 48,
-  },
-  "projects-contact-flow": {
-    color: "#6ee7a2",
-    widthFactor: 0.72,
-    maxWidth: 1180,
-    opacity: 0.12,
-    bleed: 220,
-    blur: 56,
   },
   "toolkit-band": {
     color: "#67e8b0",

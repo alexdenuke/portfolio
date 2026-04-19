@@ -23,6 +23,7 @@ type ProjectsSectionProps = {
     statuses: Record<ProjectStatus, string>;
   };
   projects: readonly [ProjectCard, ProjectCard, ProjectCard, ProjectCard];
+  headingMarker?: ReactNode;
 };
 
 const cardClassName =
@@ -248,6 +249,7 @@ export function ProjectsSection({
   subtitle,
   labels,
   projects,
+  headingMarker,
 }: ProjectsSectionProps) {
   return (
     <section
@@ -255,6 +257,8 @@ export function ProjectsSection({
       aria-labelledby="projects-title"
       className="border-b border-white/8 py-14 sm:py-20 lg:py-24"
     >
+      {headingMarker}
+
       <div className="max-w-3xl">
         <h2
           id="projects-title"

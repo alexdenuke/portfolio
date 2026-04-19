@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 type ContactItemKind = "email" | "telegram" | "github" | "resume";
 
 type ContactItem = {
@@ -12,6 +14,7 @@ type ContactSectionProps = {
   description: string;
   primaryCta: string;
   items: readonly [ContactItem, ContactItem, ContactItem, ContactItem];
+  headingMarker?: ReactNode;
 };
 
 const primaryCtaClassName =
@@ -49,6 +52,7 @@ export function ContactSection({
   description,
   primaryCta,
   items,
+  headingMarker,
 }: ContactSectionProps) {
   const primaryEmail = items.find((item) => item.kind === "email")?.value;
   const primaryHref = primaryEmail
@@ -61,6 +65,7 @@ export function ContactSection({
       aria-labelledby="contact-title"
       className="py-14 sm:py-20 lg:py-24"
     >
+      {headingMarker}
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,0.98fr)] lg:gap-8">
         <div className="max-w-2xl">
           <h2
