@@ -80,6 +80,14 @@ const RANGE_VISUALS: Record<string, Partial<RangeAnchorVisual>> = {
     bleed: 220,
     blur: 64,
   },
+  "contact-band": {
+    color: "#86b49f",
+    widthFactor: 0.5,
+    maxWidth: 860,
+    opacity: 0.06,
+    bleed: 150,
+    blur: 52,
+  },
   "toolkit-band": {
     color: "#67e8b0",
     widthFactor: 0.46,

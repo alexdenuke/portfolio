@@ -27,24 +27,66 @@
         "projects": "Projects"
       }
     },
+    "about": {
+      "title": "About me",
+      "description": "I’m a frontend developer with full-stack skills. My main focus is React, Next.js, and TypeScript, but I prefer to see the product as a whole: from interface and UX to backend logic, integrations, and deployment. I value clean solutions, thoughtful architecture, and interfaces that work well in real-world scenarios.",
+      "cards": {
+        "frontend": {
+          "title": "Frontend",
+          "stack": "React, Next.js, TypeScript, Tailwind, Shadcn",
+          "description": "I build modern interfaces with a focus on UX, performance, and clean component architecture. I care not only about how an application looks, but also how it feels in use: speed, clarity, interaction logic, and scalability."
+        },
+        "backend": {
+          "title": "Backend",
+          "stack": "NestJS, PostgreSQL, Prisma, REST API, Zod",
+          "description": "I design and develop the backend side of applications: APIs, business logic, database workflows, and data validation. My full-stack background helps me connect frontend and backend into a clear and reliable system."
+        },
+        "deploy": {
+          "title": "Deploy",
+          "stack": "Docker, Docker Compose, Nginx, VPS, Linux",
+          "description": "I set up production environments, containerization, and deployment workflows. I understand how applications behave beyond local development: environment configuration, reverse proxy setup, healthchecks, build pipelines, runtime, and production support."
+        }
+      }
+    },
     "projects": {
-      "eyebrow": "Selected mock blocks",
-      "title": "Content sits above the same canvas without section-colored slabs.",
+      "title": "Projects",
+      "subtitle": "A selection of projects where I worked on interfaces, architecture, and production-ready solutions.",
+      "actions": {
+        "viewProject": "View project",
+        "openLive": "Open live",
+        "preview": "Preview",
+        "screenshots": "Screenshots"
+      },
+      "statuses": {
+        "live": "Live",
+        "preview": "Preview",
+        "archived": "Archived",
+        "private": "Private"
+      },
       "items": {
-        "dashboard": {
-          "title": "Realtime Dashboard",
-          "caption": "Data-heavy UI with fast interactions and quiet motion.",
-          "stack": "Next.js, TypeScript, WebSocket, Tailwind"
+        "sladkoru": {
+          "title": "Sladkoru",
+          "description": "An e-commerce store for Turkish sweets that I built end-to-end: from design and frontend to backend, SEO architecture, and production deployment.",
+          "role": "Frontend / Full-Stack",
+          "stack": "Next.js, React, TypeScript, NestJS, PostgreSQL, Prisma, Docker, Nginx"
         },
-        "designSystem": {
-          "title": "Design System Core",
-          "caption": "Reusable primitives focused on rhythm, contrast, and scale.",
-          "stack": "React 19, Storybook, Tokens, CSS Variables"
+        "dashboardPro": {
+          "title": "DJ-magaz",
+          "description": "An e-commerce store for DJ products that I built end-to-end with Next.js Pages Router and Strapi: from the frontend and catalog experience to CMS integration, server-side logic, and the overall project architecture.",
+          "role": "Frontend / Full-Stack",
+          "stack": "Next.js, Strapi, TypeScript, Postgresql, Prisma, Tailwind"
         },
-        "commerce": {
-          "title": "Commerce Frontend",
-          "caption": "Clean browsing flows with careful performance budgeting.",
-          "stack": "App Router, Edge rendering, Stripe, Analytics"
+        "studioLanding": {
+          "title": "Oil market PD",
+          "description": "An e-commerce store for motor oils where I worked on the frontend side of the product, building the user-facing experience and catalog interfaces with vanilla JavaScript, HTML, and CSS.",
+          "role": "Frontend Developer",
+          "stack": "JavaScript, HTML, CSS"
+        },
+        "logisticsPanel": {
+          "title": "Smart Engineer",
+          "description": "A landing page for engineering services that I developed independently from start to finish using HTML, CSS, and JavaScript, with a focus on clear presentation, responsive layout, and a conversion-oriented page structure.",
+          "role": "Frontend Developer",
+          "stack": "HTML, CSS, JavaScript"
         }
       }
     },
@@ -74,13 +116,33 @@
       }
     },
     "contact": {
-      "eyebrow": "Contact",
-      "title": "Open to product teams, design-driven interfaces, and focused frontend work.",
-      "description": "If you want to discuss a project, product direction, or collaboration format, we can start with a short intro and move from there.",
-      "actions": {
-        "email": "Contact",
-        "projects": "Projects"
+      "title": "Contact",
+      "description": "Open to frontend and full-stack opportunities, project-based work, and thoughtful product collaborations. If you have a role, a project, or an idea to discuss, feel free to reach out.",
+      "primaryCta": "Get in touch",
+      "items": {
+        "email": {
+          "label": "Email",
+          "value": "alex@example.com"
+        },
+        "telegram": {
+          "label": "Telegram",
+          "value": "@alexdev"
+        },
+        "github": {
+          "label": "GitHub",
+          "value": "github.com/alexdev"
+        },
+        "resume": {
+          "label": "Resume",
+          "value": "/alexey-belov-cv.pdf"
+        }
       }
+    },
+    "footer": {
+      "name": "Alex Bel",
+      "subtitle": "Frontend Developer with full-stack skills.",
+      "navigationAriaLabel": "Site navigation",
+      "copyright": "© 2026 Alex Bel"
     }
   },
   "DebugPanel": {

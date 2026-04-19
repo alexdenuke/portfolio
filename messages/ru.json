@@ -27,24 +27,66 @@
         "projects": "Проекты"
       }
     },
+    "about": {
+      "title": "Обо мне",
+      "description": "Я frontend-разработчик с full-stack навыками. Основной фокус — React, Next.js и TypeScript, но мне важно видеть продукт целиком: от интерфейса и UX до backend-логики, интеграций и деплоя. Люблю аккуратные решения, чистую архитектуру и интерфейсы, которые хорошо работают в реальных сценариях.",
+      "cards": {
+        "frontend": {
+          "title": "Frontend",
+          "stack": "React, Next.js, TypeScript, Tailwind, Shadcn",
+          "description": "Создаю современные интерфейсы с фокусом на UX, производительность и чистую компонентную архитектуру. Уделяю внимание не только внешнему виду, но и тому, как приложение ощущается в работе: скорость, читаемость, логика взаимодействия и масштабируемость."
+        },
+        "backend": {
+          "title": "Backend",
+          "stack": "NestJS, PostgreSQL, Prisma, REST API, Zod",
+          "description": "Проектирую и развиваю backend-часть приложения: API, бизнес-логику, работу с базой данных и валидацию данных. Full-stack опыт помогает мне лучше связывать frontend и backend в одну понятную и устойчивую систему."
+        },
+        "deploy": {
+          "title": "Deploy",
+          "stack": "Docker, Docker Compose, Nginx, VPS, Linux",
+          "description": "Настраиваю production-среду, контейнеризацию и деплой приложения. Понимаю, как приложение ведет себя вне локальной разработки: конфигурация окружения, reverse proxy, healthcheck, сборка, запуск и поддержка в production."
+        }
+      }
+    },
     "projects": {
-      "eyebrow": "Тестовые блоки",
-      "title": "Контент лежит поверх общего полотна без отдельных цветных секционных подложек.",
+      "title": "Мои проекты",
+      "subtitle": "Несколько проектов, в которых я работал над интерфейсами, архитектурой и production-ready решениями.",
+      "actions": {
+        "viewProject": "Посмотреть проект",
+        "openLive": "Открыть сайт",
+        "preview": "Превью",
+        "screenshots": "Скриншоты"
+      },
+      "statuses": {
+        "live": "Live",
+        "preview": "Preview",
+        "archived": "Archived",
+        "private": "Private"
+      },
       "items": {
-        "dashboard": {
-          "title": "Realtime Dashboard",
-          "caption": "Интерфейс с большим количеством данных, быстрыми взаимодействиями и спокойной анимацией.",
-          "stack": "Next.js, TypeScript, WebSocket, Tailwind"
+        "sladkoru": {
+          "title": "Sladkoru",
+          "description": "Интернет-магазин турецких сладостей, в котором я реализовал полный цикл разработки: от дизайна и frontend-части до backend, SEO-архитектуры и production deployment.",
+          "role": "Frontend / Full-Stack",
+          "stack": "Next.js, React, TypeScript, NestJS, PostgreSQL, Prisma, Docker, Nginx"
         },
-        "designSystem": {
-          "title": "Design System Core",
-          "caption": "Переиспользуемые примитивы с фокусом на ритм, контраст и масштабирование.",
-          "stack": "React 19, Storybook, Tokens, CSS Variables"
+        "dashboardPro": {
+          "title": "DJ-magaz",
+          "description": "Интернет-магазин DJ-товаров, который я реализовал в полном цикле разработки на Next.js Pages Router и Strapi: от frontend-части и каталога до CMS-интеграции, серверной логики и общей архитектуры проекта.",
+          "role": "Frontend / Full-Stack",
+          "stack": "Next.js, Strapi, TypeScript, Postgresql, Prisma, Tailwind"
         },
-        "commerce": {
-          "title": "Commerce Frontend",
-          "caption": "Чистые пользовательские сценарии с аккуратным подходом к производительности.",
-          "stack": "App Router, Edge rendering, Stripe, Analytics"
+        "studioLanding": {
+          "title": "Oil market PD",
+          "description": "Интернет-магазин по продаже моторных масел, где я занимался frontend-разработкой пользовательской части и интерфейсов каталога на чистом JavaScript, HTML и CSS.",
+          "role": "Frontend Developer",
+          "stack": "JavaScript, HTML, CSS"
+        },
+        "logisticsPanel": {
+          "title": "Smart Engineer",
+          "description": "Лендинг для продажи инженерных услуг, который я полностью разработал самостоятельно на HTML, CSS и JavaScript, с фокусом на понятную подачу, адаптивную верстку и конверсионную структуру страницы.",
+          "role": "Frontend Developer",
+          "stack": "HTML, CSS, JavaScript"
         }
       }
     },
@@ -74,13 +116,33 @@
       }
     },
     "contact": {
-      "eyebrow": "Контакт",
-      "title": "Открыт к продуктовым командам, интерфейсам с сильной визуальной культурой и сфокусированной frontend-разработке.",
-      "description": "Если хотите обсудить проект, продуктовую задачу или формат сотрудничества, можно начать с короткого знакомства и двигаться дальше оттуда.",
-      "actions": {
-        "email": "Связаться",
-        "projects": "Проекты"
+      "title": "Контакты",
+      "description": "Открыт к предложениям по frontend и full-stack разработке, проектной работе и интересным продуктовым задачам. Если у вас есть вакансия, проект или идея для сотрудничества — напишите мне удобным способом.",
+      "primaryCta": "Связаться со мной",
+      "items": {
+        "email": {
+          "label": "Email",
+          "value": "alex@example.com"
+        },
+        "telegram": {
+          "label": "Telegram",
+          "value": "@alexdev"
+        },
+        "github": {
+          "label": "GitHub",
+          "value": "github.com/alexdev"
+        },
+        "resume": {
+          "label": "Резюме",
+          "value": "/alexey-belov-cv.pdf"
+        }
       }
+    },
+    "footer": {
+      "name": "Алексей Белов",
+      "subtitle": "Frontend-разработчик с full-stack навыками.",
+      "navigationAriaLabel": "Навигация по сайту",
+      "copyright": "© 2026 Алексей Белов"
     }
   },
   "DebugPanel": {
