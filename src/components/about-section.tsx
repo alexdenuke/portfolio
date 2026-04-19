@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 type AboutSectionCard = {
   title: string;
   stack: string;
@@ -8,6 +10,7 @@ type AboutSectionProps = {
   title: string;
   description: string;
   cards: readonly [AboutSectionCard, AboutSectionCard, AboutSectionCard];
+  topBoundaryMarker?: ReactNode;
 };
 
 const cardClassName =
@@ -17,6 +20,7 @@ export function AboutSection({
   title,
   description,
   cards,
+  topBoundaryMarker,
 }: AboutSectionProps) {
   return (
     <section
@@ -24,6 +28,8 @@ export function AboutSection({
       aria-labelledby="about-title"
       className="border-b border-white/8 py-14 sm:py-20 lg:py-24"
     >
+      {topBoundaryMarker}
+
       <div className="max-w-3xl">
         <h2
           id="about-title"

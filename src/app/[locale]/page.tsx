@@ -97,9 +97,21 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
           stackLabel={t("firstScreen.stackLabel")}
         />
 
+        <BackgroundRangeAnchorMarker
+          edge="start"
+          id="about-band"
+          className={centeredAnchorMarkerClassName}
+        />
         <AboutSection
           title={t("about.title")}
           description={t("about.description")}
+          topBoundaryMarker={
+            <BackgroundRangeAnchorMarker
+              edge="end"
+              id="about-band"
+              className={centeredAnchorMarkerClassName}
+            />
+          }
           cards={[
             {
               title: t("about.cards.frontend.title"),
@@ -121,7 +133,7 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
 
         <BackgroundRangeAnchorMarker
           edge="start"
-          id="projects-zone"
+          id="projects-contact-flow"
           className={centeredAnchorMarkerClassName}
         />
         <ProjectsSection
@@ -174,17 +186,6 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
             },
           ]}
         />
-        <BackgroundRangeAnchorMarker
-          edge="end"
-          id="projects-zone"
-          className={centeredAnchorMarkerClassName}
-        />
-
-        <BackgroundRangeAnchorMarker
-          edge="start"
-          id="contact-band"
-          className={centeredAnchorMarkerClassName}
-        />
         <ContactSection
           title={t("contact.title")}
           description={t("contact.description")}
@@ -216,7 +217,7 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
         />
         <BackgroundRangeAnchorMarker
           edge="end"
-          id="contact-band"
+          id="projects-contact-flow"
           className={centeredAnchorMarkerClassName}
         />
       </main>

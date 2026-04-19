@@ -53,6 +53,61 @@ function safeSvgId(prefix: string, rawId: string) {
   return `${prefix}-${rawId.replace(/[^a-zA-Z0-9_-]/g, "-")}`;
 }
 
+function createRangeAnchorShape({
+  anchorId,
+  filterId,
+  gradientId,
+  zoneHeight,
+  zoneWidth,
+  zoneX,
+  zoneY,
+}: {
+  anchorId: string;
+  filterId: string;
+  gradientId: string;
+  zoneHeight: number;
+  zoneWidth: number;
+  zoneX: number;
+  zoneY: number;
+}) {
+  if (anchorId !== "projects-contact-flow") {
+    return (
+      <rect
+        key={anchorId}
+        x={zoneX}
+        y={zoneY}
+        width={zoneWidth}
+        height={zoneHeight}
+        rx={zoneWidth / 2}
+        fill={`url(#${gradientId})`}
+        filter={`url(#${filterId})`}
+      />
+    );
+  }
+
+  const centerX = zoneX + zoneWidth / 2;
+  const bottomY = zoneY + zoneHeight;
+  const pathData = [
+    `M ${centerX} ${zoneY}`,
+    `C ${centerX + zoneWidth * 0.32} ${zoneY + zoneHeight * 0.04}, ${centerX + zoneWidth * 0.44} ${zoneY + zoneHeight * 0.16}, ${centerX + zoneWidth * 0.28} ${zoneY + zoneHeight * 0.31}`,
+    `C ${centerX + zoneWidth * 0.12} ${zoneY + zoneHeight * 0.43}, ${centerX + zoneWidth * 0.46} ${zoneY + zoneHeight * 0.58}, ${centerX + zoneWidth * 0.25} ${zoneY + zoneHeight * 0.73}`,
+    `C ${centerX + zoneWidth * 0.1} ${zoneY + zoneHeight * 0.85}, ${centerX + zoneWidth * 0.34} ${zoneY + zoneHeight * 0.95}, ${centerX} ${bottomY}`,
+    `C ${centerX - zoneWidth * 0.34} ${zoneY + zoneHeight * 0.95}, ${centerX - zoneWidth * 0.1} ${zoneY + zoneHeight * 0.85}, ${centerX - zoneWidth * 0.25} ${zoneY + zoneHeight * 0.73}`,
+    `C ${centerX - zoneWidth * 0.46} ${zoneY + zoneHeight * 0.58}, ${centerX - zoneWidth * 0.12} ${zoneY + zoneHeight * 0.43}, ${centerX - zoneWidth * 0.28} ${zoneY + zoneHeight * 0.31}`,
+    `C ${centerX - zoneWidth * 0.44} ${zoneY + zoneHeight * 0.16}, ${centerX - zoneWidth * 0.32} ${zoneY + zoneHeight * 0.04}, ${centerX} ${zoneY}`,
+    "Z",
+  ].join(" ");
+
+  return (
+    <path
+      key={anchorId}
+      d={pathData}
+      fill={`url(#${gradientId})`}
+      filter={`url(#${filterId})`}
+    />
+  );
+}
+
 export function BackgroundSvgRenderer({
   contentRef,
 }: {
@@ -208,18 +263,15 @@ export function BackgroundSvgRenderer({
       return {
         gradientId,
         filterId,
-        shape: (
-          <rect
-            key={anchor.id}
-            x={zoneX}
-            y={zoneY}
-            width={zoneWidth}
-            height={zoneHeight}
-            rx={zoneWidth / 2}
-            fill={`url(#${gradientId})`}
-            filter={`url(#${filterId})`}
-          />
-        ),
+        shape: createRangeAnchorShape({
+          anchorId: anchor.id,
+          filterId,
+          gradientId,
+          zoneHeight,
+          zoneWidth,
+          zoneX,
+          zoneY,
+        }),
         gradient: (
           <linearGradient
             id={gradientId}
