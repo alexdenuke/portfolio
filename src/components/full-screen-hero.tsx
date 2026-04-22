@@ -21,10 +21,10 @@ const navLinkClassName =
   "font-mono text-[0.66rem] uppercase tracking-[0.18em] text-white/62 transition-colors hover:text-white sm:text-[0.72rem] sm:tracking-[0.24em]";
 
 const primaryCtaClassName =
-  "inline-flex min-h-12 w-full items-center justify-center rounded-full border border-accent/35 bg-accent px-6 py-3 font-mono text-[0.72rem] uppercase tracking-[0.26em] text-black transition-colors hover:border-accent-strong hover:bg-accent-strong sm:w-auto";
+  "inline-flex min-h-12 w-full items-center justify-center rounded-full border border-accent/35 bg-accent px-6 py-3 text-[0.82rem] font-semibold uppercase tracking-[0.14em] text-black transition-colors hover:border-accent-strong hover:bg-accent-strong sm:w-auto";
 
 const secondaryCtaClassName =
-  "inline-flex min-h-12 w-full items-center justify-center rounded-full border border-white/10 bg-white/[0.03] px-6 py-3 font-mono text-[0.72rem] uppercase tracking-[0.26em] text-white/82 transition-colors hover:border-white/20 hover:bg-white/[0.06] hover:text-white sm:w-auto";
+  "inline-flex min-h-12 w-full items-center justify-center rounded-full border border-white/10 bg-white/[0.03] px-6 py-3 text-[0.82rem] font-semibold uppercase tracking-[0.14em] text-white/82 transition-colors hover:border-white/20 hover:bg-white/[0.06] hover:text-white sm:w-auto";
 
 export function FullScreenHero({
   navigationLabel,

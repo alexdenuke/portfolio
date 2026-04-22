@@ -16,20 +16,21 @@
   --color-line: var(--line);
   --color-accent: var(--accent);
   --color-accent-strong: var(--accent-strong);
-  --font-sans: var(--font-sora);
-  --font-mono: var(--font-ibm-plex-mono);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
 html {
   color-scheme: dark;
   background-color: var(--background);
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   margin: 0;
   color: var(--foreground);
-  font-family: var(--font-sora), Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
   background-color: #060708;
   background-image:
@@ -86,6 +87,12 @@ button {
     border-color 180ms ease,
     opacity 180ms ease,
     transform 180ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 @media (max-width: 640px) {

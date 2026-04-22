@@ -32,12 +32,23 @@ function trimLeadingSymbol(value: string, symbol: string) {
   return value.startsWith(symbol) ? value.slice(symbol.length) : value;
 }
 
-function resolveContactHref(kind: "email" | "telegram" | "github", value: string) {
+function trimLeadingPrefix(value: string, prefix: string) {
+  return value.startsWith(prefix) ? value.slice(prefix.length) : value;
+}
+
+function resolveContactHref(
+  kind: "email" | "telegram" | "github",
+  value: string,
+) {
   switch (kind) {
     case "email":
-      return `mailto:${value}`;
+      return value.startsWith("mailto:") ? value : `mailto:${value}`;
     case "telegram":
-      return `https://t.me/${trimLeadingSymbol(value, "@")}`;
+      if (value.startsWith("http")) {
+        return value;
+      }
+
+      return `https://t.me/${trimLeadingSymbol(trimLeadingPrefix(value, "t.me/"), "@")}`;
     case "github":
       return value.startsWith("http") ? value : `https://${value}`;
   }
@@ -141,7 +152,6 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
             />
           }
           labels={{
-            viewProject: t("projects.actions.viewProject"),
             openLive: t("projects.actions.openLive"),
             preview: t("projects.actions.preview"),
             screenshots: t("projects.actions.screenshots"),
@@ -151,6 +161,11 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
               archived: t("projects.statuses.archived"),
               private: t("projects.statuses.private"),
             },
+            details: {
+              role: t("projects.details.role"),
+              stack: t("projects.details.stack"),
+              close: t("projects.details.close"),
+            },
           }}
           projects={[
             {
@@ -159,15 +174,21 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
               role: t("projects.items.sladkoru.role"),
               stack: t("projects.items.sladkoru.stack"),
               status: "live",
-              preview: "commerce",
+              previewImage: "/project.png",
+              actionHref: "https://sladkoru.ru",
             },
             {
               title: t("projects.items.dashboardPro.title"),
               description: t("projects.items.dashboardPro.description"),
               role: t("projects.items.dashboardPro.role"),
               stack: t("projects.items.dashboardPro.stack"),
-              status: "preview",
-              preview: "dashboard",
+              status: "archived",
+              previewImage: "/dj-shop/hero.png",
+              screenshots: [
+                "/dj-shop/hero.png",
+                "/dj-shop/news.png",
+                "/dj-shop/partners.png",
+              ],
             },
             {
               title: t("projects.items.studioLanding.title"),
@@ -175,15 +196,22 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
               role: t("projects.items.studioLanding.role"),
               stack: t("projects.items.studioLanding.stack"),
               status: "archived",
-              preview: "landing",
+              previewImage: "/oil-shop/hero.png",
+              screenshots: [
+                "/oil-shop/hero.png",
+                "/oil-shop/category.png",
+                "/oil-shop/popular.png",
+                "/oil-shop/product-card.png",
+              ],
             },
             {
               title: t("projects.items.logisticsPanel.title"),
               description: t("projects.items.logisticsPanel.description"),
               role: t("projects.items.logisticsPanel.role"),
               stack: t("projects.items.logisticsPanel.stack"),
-              status: "private",
-              preview: "logistics",
+              status: "preview",
+              previewImage: "/engineer/preview-engineer.png",
+              actionHref: "https://engineer-gold.vercel.app/",
             },
           ]}
         />
@@ -199,15 +227,15 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
           }
           items={[
             {
-              kind: "email",
-              label: t("contact.items.email.label"),
-              value: emailValue,
-              featured: true,
-            },
-            {
               kind: "telegram",
               label: t("contact.items.telegram.label"),
               value: telegramValue,
+              featured: true,
+            },
+            {
+              kind: "email",
+              label: t("contact.items.email.label"),
+              value: emailValue,
               featured: true,
             },
             {

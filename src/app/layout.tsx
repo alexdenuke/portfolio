@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Sora } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import { BackgroundAnchorsProvider } from "@/components/background-anchors";
 import { GlobalBackgroundStage } from "@/components/background-renderer";
 import { getLocale } from "next-intl/server";
 import "./globals.css";
 
-const sora = Sora({
-  variable: "--font-sora",
-  subsets: ["latin"],
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin", "cyrillic"],
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-plex-mono",
+const jetBrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin", "cyrillic"],
   weight: ["400", "500", "600"],
 });
@@ -32,7 +32,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${sora.variable} ${ibmPlexMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${jetBrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-background text-foreground">
         <BackgroundAnchorsProvider>

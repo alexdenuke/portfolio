@@ -18,7 +18,7 @@ type ContactSectionProps = {
 };
 
 const primaryCtaClassName =
-  "inline-flex min-h-12 items-center justify-center rounded-full border border-accent/35 bg-accent px-6 py-3 font-mono text-[0.72rem] uppercase tracking-[0.26em] text-black transition-colors hover:border-accent-strong hover:bg-accent-strong";
+  "inline-flex min-h-12 items-center justify-center rounded-full border border-accent/35 bg-accent px-6 py-3 text-[0.82rem] font-semibold uppercase tracking-[0.14em] text-black transition-colors hover:border-accent-strong hover:bg-accent-strong";
 
 const secondaryCardClassName =
   "flex min-h-[9.25rem] flex-col rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-5 transition-transform duration-200 hover:-translate-y-0.5 hover:border-white/16 hover:bg-white/[0.045] sm:p-6";
@@ -30,12 +30,20 @@ function trimLeadingSymbol(value: string, symbol: string) {
   return value.startsWith(symbol) ? value.slice(symbol.length) : value;
 }
 
+function trimLeadingPrefix(value: string, prefix: string) {
+  return value.startsWith(prefix) ? value.slice(prefix.length) : value;
+}
+
 function resolveHref(kind: ContactItemKind, value: string) {
   switch (kind) {
     case "email":
-      return `mailto:${value}`;
+      return value.startsWith("mailto:") ? value : `mailto:${value}`;
     case "telegram":
-      return `https://t.me/${trimLeadingSymbol(value, "@")}`;
+      if (value.startsWith("http")) {
+        return value;
+      }
+
+      return `https://t.me/${trimLeadingSymbol(trimLeadingPrefix(value, "t.me/"), "@")}`;
     case "github":
       return value.startsWith("http") ? value : `https://${value}`;
     case "resume":

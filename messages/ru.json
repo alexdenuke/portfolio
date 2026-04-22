@@ -63,6 +63,11 @@
         "archived": "Archived",
         "private": "Private"
       },
+      "details": {
+        "role": "Роль",
+        "stack": "Стек",
+        "close": "Закрыть детали проекта"
+      },
       "items": {
         "sladkoru": {
           "title": "Sladkoru",
@@ -122,15 +127,15 @@
       "items": {
         "email": {
           "label": "Email",
-          "value": "alex@example.com"
+          "value": "alexdenuke@gmail.com"
         },
         "telegram": {
           "label": "Telegram",
-          "value": "@alexdev"
+          "value": "@alexdenuke"
         },
         "github": {
           "label": "GitHub",
-          "value": "github.com/alexdev"
+          "value": "github.com/alexdenuke"
         },
         "resume": {
           "label": "Резюме",

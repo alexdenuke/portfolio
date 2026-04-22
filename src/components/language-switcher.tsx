@@ -6,7 +6,7 @@ import { routing, type AppLocale } from "@/i18n/routing";
 
 function getButtonClassName(isActive: boolean) {
   return [
-    "rounded-full px-3 py-1.5 font-mono text-[0.68rem] uppercase tracking-[0.24em] transition-colors",
+    "rounded-full px-3 py-1.5 text-[0.74rem] font-semibold uppercase tracking-[0.12em] transition-colors",
     isActive
       ? "bg-accent text-black"
       : "text-white/52 hover:bg-white/[0.06] hover:text-white",
