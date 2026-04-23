@@ -20,7 +20,7 @@ type ResolvedRangeAnchorVisual = RangeAnchorVisual & {
 };
 
 const DEFAULT_SINGLE_VISUAL: SingleAnchorVisual = {
-  color: "#6ee7a2",
+  color: "#31bc3f",
   radiusX: 320,
   radiusY: 240,
   opacity: 0.12,
@@ -28,37 +28,37 @@ const DEFAULT_SINGLE_VISUAL: SingleAnchorVisual = {
 
 const SINGLE_VISUALS: Record<string, Partial<SingleAnchorVisual>> = {
   "page-entry": {
-    color: "#98a6b7",
+    color: "#7ea985",
     radiusX: 240,
     radiusY: 180,
     opacity: 0.06,
   },
   "hero-glow": {
-    color: "#6ee7a2",
-    radiusX: 420,
-    radiusY: 320,
-    opacity: 0.18,
+    color: "#54ff65",
+    radiusX: 360,
+    radiusY: 260,
+    opacity: 0.11,
   },
   "readability-focus": {
-    color: "#94a3b8",
+    color: "#90b597",
     radiusX: 360,
     radiusY: 260,
     opacity: 0.08,
   },
   "toolkit-tail": {
-    color: "#60d394",
+    color: "#3fd153",
     radiusX: 280,
     radiusY: 220,
     opacity: 0.1,
   },
   "projects-heading-glow": {
-    color: "#6ee7a2",
+    color: "#31bc3f",
     radiusX: 920,
     radiusY: 220,
     opacity: 0.12,
   },
   "contact-heading-glow": {
-    color: "#6ee7a2",
+    color: "#31bc3f",
     radiusX: 920,
     radiusY: 220,
     opacity: 0.12,
@@ -66,7 +66,7 @@ const SINGLE_VISUALS: Record<string, Partial<SingleAnchorVisual>> = {
 };
 
 const DEFAULT_RANGE_VISUAL: RangeAnchorVisual = {
-  color: "#6ee7a2",
+  color: "#31bc3f",
   widthFactor: 0.52,
   minWidth: 360,
   maxWidth: 920,
@@ -77,15 +77,15 @@ const DEFAULT_RANGE_VISUAL: RangeAnchorVisual = {
 
 const RANGE_VISUALS: Record<string, Partial<RangeAnchorVisual>> = {
   "hero-band": {
-    color: "#7dd3a7",
-    widthFactor: 0.56,
+    color: "#63eb71",
+    widthFactor: 0.48,
     maxWidth: 980,
-    opacity: 0.09,
-    bleed: 160,
-    blur: 44,
+    opacity: 0.055,
+    bleed: 130,
+    blur: 52,
   },
   "about-band": {
-    color: "#6ee7a2",
+    color: "#31bc3f",
     widthFactor: 1.16,
     maxWidth: 1680,
     opacity: 0.13,
@@ -93,7 +93,7 @@ const RANGE_VISUALS: Record<string, Partial<RangeAnchorVisual>> = {
     blur: 48,
   },
   "toolkit-band": {
-    color: "#67e8b0",
+    color: "#4fd763",
     widthFactor: 0.46,
     maxWidth: 820,
     opacity: 0.07,

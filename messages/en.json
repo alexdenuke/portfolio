@@ -144,8 +144,8 @@
       }
     },
     "footer": {
-      "name": "Alex Bel",
-      "subtitle": "Frontend Developer with full-stack skills.",
+      "name": "",
+      "subtitle": "",
       "navigationAriaLabel": "Site navigation",
       "copyright": "© 2026 Alex Bel"
     }

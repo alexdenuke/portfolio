@@ -89,7 +89,6 @@ export function FullScreenHero({
               {actions.projects}
             </a>
           </div>
-
         </div>
       </div>
     </section>

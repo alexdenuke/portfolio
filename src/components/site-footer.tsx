@@ -15,7 +15,11 @@ type SiteFooterProps = {
   copyright: string;
   navigationAriaLabel: string;
   navigationItems: readonly [FooterNavItem, FooterNavItem, FooterNavItem];
-  externalItems: readonly [FooterExternalItem, FooterExternalItem, FooterExternalItem];
+  externalItems: readonly [
+    FooterExternalItem,
+    FooterExternalItem,
+    FooterExternalItem,
+  ];
 };
 
 const textLinkClassName =
@@ -34,12 +38,12 @@ export function SiteFooter({
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-6 sm:px-10 sm:py-8 lg:px-14">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-xl">
-            <p className="text-[1.05rem] font-semibold tracking-[-0.03em] text-white sm:text-[1.15rem]">
+            {/* <p className="text-[1.05rem] font-semibold tracking-[-0.03em] text-white sm:text-[1.15rem]">
               {name}
             </p>
             <p className="mt-2 text-sm leading-6 text-zinc-400 sm:text-[0.95rem]">
               {subtitle}
-            </p>
+            </p> */}
           </div>
 
           <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-start sm:gap-8 lg:justify-end">
@@ -48,7 +52,11 @@ export function SiteFooter({
               className="flex flex-wrap gap-x-4 gap-y-2 sm:gap-x-5"
             >
               {navigationItems.map((item) => (
-                <a key={item.href} href={item.href} className={textLinkClassName}>
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className={textLinkClassName}
+                >
                   {item.label}
                 </a>
               ))}
@@ -70,11 +78,11 @@ export function SiteFooter({
           </div>
         </div>
 
-        <div className="border-t border-white/6 pt-4">
+        {/* <div className="border-t border-white/6 pt-4">
           <p className="font-mono text-[0.66rem] uppercase tracking-[0.22em] text-white/42 sm:text-[0.7rem]">
             {copyright}
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

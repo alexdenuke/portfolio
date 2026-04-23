@@ -144,8 +144,8 @@
       }
     },
     "footer": {
-      "name": "Алексей Белов",
-      "subtitle": "Frontend-разработчик с full-stack навыками.",
+      "name": "",
+      "subtitle": "",
       "navigationAriaLabel": "Навигация по сайту",
       "copyright": "© 2026 Алексей Белов"
     }
