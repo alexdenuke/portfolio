@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import {
-  BackgroundRangeAnchorMarker,
-  BackgroundSingleAnchorMarker,
-} from "@/components/background-anchors";
+import { BackgroundSingleAnchorMarker } from "@/components/background-anchors";
 import { AboutSection } from "@/components/about-section";
 import { ContactSection } from "@/components/contact-section";
 import { FullScreenHero } from "@/components/full-screen-hero";
@@ -81,11 +78,6 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
       <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-4 sm:px-10 lg:px-14">
         <BackgroundSingleAnchorMarker id="page-entry" />
 
-        <BackgroundRangeAnchorMarker
-          edge="start"
-          id="hero-band"
-          className={centeredAnchorMarkerClassName}
-        />
         <BackgroundSingleAnchorMarker
           id="hero-glow"
           className={centeredAnchorMarkerClassName}
@@ -108,18 +100,12 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
           stackLabel={t("firstScreen.stackLabel")}
         />
 
-        <BackgroundRangeAnchorMarker
-          edge="start"
-          id="about-band"
-          className={centeredAnchorMarkerClassName}
-        />
         <AboutSection
           title={t("about.title")}
           description={t("about.description")}
-          topBoundaryMarker={
-            <BackgroundRangeAnchorMarker
-              edge="end"
-              id="about-band"
+          headingMarker={
+            <BackgroundSingleAnchorMarker
+              id="about-heading-glow"
               className={centeredAnchorMarkerClassName}
             />
           }

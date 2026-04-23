@@ -33,19 +33,6 @@ body {
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
   background-color: #030503;
-  background-image:
-    radial-gradient(circle at top, rgba(32, 126, 43, 0.1), transparent 36%),
-    radial-gradient(circle at 16% 16%, rgba(13, 109, 23, 0.11), transparent 30%),
-    linear-gradient(180deg, #030503 0%, #041008 32%, #07130b 62%, #030603 100%);
-  background-repeat: no-repeat;
-  background-size:
-    100% 100%,
-    120% 54rem,
-    100% 100%;
-  background-position:
-    top center,
-    left top,
-    top center;
 }
 
 .app-shell {
@@ -102,14 +89,4 @@ button {
 }
 
 @media (max-width: 640px) {
-  body {
-    background-image:
-      radial-gradient(circle at top, rgba(32, 126, 43, 0.085), transparent 34%),
-      radial-gradient(circle at 18% 14%, rgba(13, 109, 23, 0.095), transparent 28%),
-      linear-gradient(180deg, #030503 0%, #041008 32%, #07130b 62%, #030603 100%);
-    background-size:
-      100% 100%,
-      140% 34rem,
-      100% 100%;
-  }
 }
