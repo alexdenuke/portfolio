@@ -20,7 +20,7 @@ type ResolvedRangeAnchorVisual = RangeAnchorVisual & {
 };
 
 const DEFAULT_SINGLE_VISUAL: SingleAnchorVisual = {
-  color: "#31bc3f",
+  color: "#176f22",
   radiusX: 320,
   radiusY: 240,
   opacity: 0.12,
@@ -28,37 +28,37 @@ const DEFAULT_SINGLE_VISUAL: SingleAnchorVisual = {
 
 const SINGLE_VISUALS: Record<string, Partial<SingleAnchorVisual>> = {
   "page-entry": {
-    color: "#7ea985",
+    color: "#5b7f61",
     radiusX: 240,
     radiusY: 180,
     opacity: 0.06,
   },
   "hero-glow": {
-    color: "#54ff65",
+    color: "#2c8e39",
     radiusX: 360,
     radiusY: 260,
     opacity: 0.11,
   },
   "readability-focus": {
-    color: "#90b597",
+    color: "#6a8f70",
     radiusX: 360,
     radiusY: 260,
     opacity: 0.08,
   },
   "toolkit-tail": {
-    color: "#3fd153",
+    color: "#228430",
     radiusX: 280,
     radiusY: 220,
     opacity: 0.1,
   },
   "projects-heading-glow": {
-    color: "#31bc3f",
+    color: "#176f22",
     radiusX: 920,
     radiusY: 220,
     opacity: 0.12,
   },
   "contact-heading-glow": {
-    color: "#31bc3f",
+    color: "#176f22",
     radiusX: 920,
     radiusY: 220,
     opacity: 0.12,
@@ -66,7 +66,7 @@ const SINGLE_VISUALS: Record<string, Partial<SingleAnchorVisual>> = {
 };
 
 const DEFAULT_RANGE_VISUAL: RangeAnchorVisual = {
-  color: "#31bc3f",
+  color: "#176f22",
   widthFactor: 0.52,
   minWidth: 360,
   maxWidth: 920,
@@ -77,7 +77,7 @@ const DEFAULT_RANGE_VISUAL: RangeAnchorVisual = {
 
 const RANGE_VISUALS: Record<string, Partial<RangeAnchorVisual>> = {
   "hero-band": {
-    color: "#63eb71",
+    color: "#2f8a39",
     widthFactor: 0.48,
     maxWidth: 980,
     opacity: 0.055,
@@ -85,7 +85,7 @@ const RANGE_VISUALS: Record<string, Partial<RangeAnchorVisual>> = {
     blur: 52,
   },
   "about-band": {
-    color: "#31bc3f",
+    color: "#176f22",
     widthFactor: 1.16,
     maxWidth: 1680,
     opacity: 0.13,
@@ -93,7 +93,7 @@ const RANGE_VISUALS: Record<string, Partial<RangeAnchorVisual>> = {
     blur: 48,
   },
   "toolkit-band": {
-    color: "#4fd763",
+    color: "#257d31",
     widthFactor: 0.46,
     maxWidth: 820,
     opacity: 0.07,
