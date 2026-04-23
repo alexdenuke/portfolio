@@ -186,8 +186,8 @@ export default async function LocalizedHomePage({ params }: LocalePageProps) {
               previewImage: "/dj-shop/hero.png",
               screenshots: [
                 "/dj-shop/hero.png",
-                "/dj-shop/news.png",
-                "/dj-shop/partners.png",
+                "/dj-shop/popular.png",
+                "/dj-shop/feedback.png",
               ],
             },
             {
