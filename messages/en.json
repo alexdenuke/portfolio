@@ -29,7 +29,7 @@
     },
     "about": {
       "title": "About me",
-      "description": "I’m a frontend developer with full-stack skills. My main focus is React, Next.js, and TypeScript, but I prefer to see the product as a whole: from interface and UX to backend logic, integrations, and deployment. I value clean solutions, thoughtful architecture, and interfaces that work well in real-world scenarios.",
+      "description": "My main focus is React, Next.js, and TypeScript, but I prefer to see the product as a whole: from interface and UX to backend logic, integrations, and deployment. I value clean solutions, thoughtful architecture, and interfaces that work well in real-world scenarios.",
       "cards": {
         "frontend": {
           "title": "Frontend",
