@@ -34,17 +34,17 @@
         "frontend": {
           "title": "Frontend",
           "stack": "React, Next.js, TypeScript, Tailwind, Shadcn",
-          "description": "I build modern interfaces with a focus on UX, performance, and clean component architecture. I care not only about how an application looks, but also how it feels in use: speed, clarity, interaction logic, and scalability."
+          "description": "I build modern interfaces with a focus on UX, performance, and scalable component architecture."
         },
         "backend": {
           "title": "Backend",
           "stack": "NestJS, PostgreSQL, Prisma, REST API, Zod",
-          "description": "I design and develop the backend side of applications: APIs, business logic, database workflows, and data validation. My full-stack background helps me connect frontend and backend into a clear and reliable system."
+          "description": "I design and develop APIs, business logic, and data layers. My full-stack experience helps build clear and reliable systems."
         },
         "deploy": {
-          "title": "Deploy",
+          "title": "DevOps / Deploy",
           "stack": "Docker, Docker Compose, Nginx, VPS, Linux",
-          "description": "I set up production environments, containerization, and deployment workflows. I understand how applications behave beyond local development: environment configuration, reverse proxy setup, healthchecks, build pipelines, runtime, and production support."
+          "description": "I set up production environments, containerization, and application deployment. I understand how systems behave in production: configuration, reverse proxy, build, runtime, and maintenance."
         }
       }
     },
