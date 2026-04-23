@@ -31,11 +31,11 @@ export const metadata: Metadata = {
   metadataBase,
   title: "Frontend Developer Portfolio",
   description:
-    "Modern portfolio landing page with a reusable dark background system.",
+    "Frontend Developer | React, Next.js, TypeScript. I build modern, fast, and user-friendly web applications and websites.",
   openGraph: {
     title: "Frontend Developer Portfolio",
     description:
-      "Modern portfolio landing page with a reusable dark background system.",
+      "Frontend Developer | React, Next.js, TypeScript. I build modern, fast, and user-friendly web applications and websites.",
     type: "website",
     images: [
       {
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Frontend Developer Portfolio",
     description:
-      "Modern portfolio landing page with a reusable dark background system.",
+      "Frontend Developer | React, Next.js, TypeScript. I build modern, fast, and user-friendly web applications and websites.",
     images: ["/preview.png"],
   },
   icons: {
